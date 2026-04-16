@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { COMPANY } from '@/lib/company';
 
+const socialImage = '/brand/social-preview.svg';
+
 export const metadata: Metadata = {
   title: 'Auto Freeway | Safari Freeway Electric Fleet Solutions',
   description:
@@ -12,7 +14,22 @@ export const metadata: Metadata = {
       'Premium Safari Freeway electric fleet platform for transport operators, logistics companies, hotels, and enterprise buyers.',
     url: COMPANY.website,
     siteName: COMPANY.brand,
-    type: 'website'
+    type: 'website',
+    images: [
+      {
+        url: socialImage,
+        width: 1200,
+        height: 630,
+        alt: 'Safari Freeway electric fleet social preview'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Auto Freeway | Safari Freeway Electric Fleet Solutions',
+    description:
+      'Electric shuttle, cargo, and commercial fleet solutions for transport operators across East Africa.',
+    images: [socialImage]
   }
 };
 

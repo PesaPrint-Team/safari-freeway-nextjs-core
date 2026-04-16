@@ -1,0 +1,31 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#120D0A"/>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1004" cy="118" r="238" fill="#CF3439" fill-opacity="0.18"/>
+  <circle cx="173" cy="93" r="194" fill="#F1DFCF" fill-opacity="0.08"/>
+  <circle cx="1078" cy="529" r="282" fill="#F1DFCF" fill-opacity="0.06"/>
+  <rect x="68" y="68" width="1064" height="494" rx="34" fill="url(#panel)" stroke="rgba(255,248,240,0.12)"/>
+  <rect x="728" y="132" width="330" height="296" rx="28" fill="#1C1411"/>
+  <rect x="748" y="152" width="290" height="256" rx="22" fill="#2A211D"/>
+  <rect x="768" y="172" width="250" height="216" rx="18" fill="#120D0A"/>
+  <text x="110" y="154" fill="#F1DFCF" font-family="Avenir Next, Montserrat, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="7">AUTO FREEWAY LIMITED</text>
+  <text x="110" y="248" fill="#FFF8F0" font-family="Avenir Next, Montserrat, Segoe UI, Arial, sans-serif" font-size="68" font-weight="700">Safari Freeway</text>
+  <text x="110" y="318" fill="#F1DFCF" font-family="Avenir Next, Montserrat, Segoe UI, Arial, sans-serif" font-size="36" font-weight="600">Electric Fleet Solutions for East Africa</text>
+  <text x="110" y="384" fill="rgba(255,248,240,0.72)" font-family="Avenir Next, Montserrat, Segoe UI, Arial, sans-serif" font-size="25" font-weight="500">Shuttle, cargo, reefer, and commercial EV platforms</text>
+  <text x="110" y="422" fill="rgba(255,248,240,0.72)" font-family="Avenir Next, Montserrat, Segoe UI, Arial, sans-serif" font-size="25" font-weight="500">built for operators, logistics teams, and transport fleets.</text>
+  <rect x="110" y="469" width="220" height="48" rx="24" fill="rgba(255,248,240,0.08)" stroke="rgba(255,248,240,0.12)"/>
+  <text x="136" y="500" fill="#F1DFCF" font-family="Avenir Next, Montserrat, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">THE ROAD AHEAD</text>
+  <text x="344" y="500" fill="#CF3439" font-family="Avenir Next, Montserrat, Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="3">IS ELECTRIC</text>
+  <text x="768" y="474" fill="#F1DFCF" font-family="Avenir Next, Montserrat, Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="3">safarifreeway.com</text>
+  <defs>
+    <linearGradient id="bg" x1="105" y1="20" x2="1018" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A110D"/>
+      <stop offset="0.45" stop-color="#120D0A"/>
+      <stop offset="1" stop-color="#090909"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="600" y1="68" x2="600" y2="562" gradientUnits="userSpaceOnUse">
+      <stop stop-color="rgba(255,248,240,0.08)"/>
+      <stop offset="1" stop-color="rgba(255,248,240,0.03)"/>
+    </linearGradient>
+  </defs>
+</svg>
