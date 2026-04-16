@@ -1,6 +1,6 @@
 export const COMPANY = {
   brand: 'Auto Freeway',
-  vehicleBrand: '',
+  vehicleBrand: 'Safari Freeway',
   legalName: 'Auto Freeway Limited',
   tagline: 'The Road Ahead is Electric',
   email: 'info@autofreeway.co.ke',

@@ -10,10 +10,10 @@ export function WhatsappSection() {
       <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 sm:p-8">
         <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
           <div>
-            <div className="text-xs font-semibold uppercase tracking-[0.35em] text-white/45">Instant Lead Funnel</div>
-            <h3 className="mt-3 text-2xl font-semibold text-white sm:text-3xl">Capture serious buyers on WhatsApp in one tap.</h3>
+            <div className="text-xs font-semibold uppercase tracking-[0.35em] text-white/45">WhatsApp</div>
+            <h3 className="mt-3 text-2xl font-semibold text-white sm:text-3xl">Talk to us directly on WhatsApp.</h3>
             <p className="mt-3 max-w-3xl text-base leading-7 text-white/60">
-              A direct WhatsApp CTA for fleet buyers who want immediate pricing, delivery timelines, financing options, or route-fit advice.
+              Get quick answers on pricing, delivery timelines, financing options, and the right {COMPANY.vehicleBrand} model for your routes.
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row">

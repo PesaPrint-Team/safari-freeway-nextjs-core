@@ -17,14 +17,14 @@ export function Hero() {
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 py-12 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-20">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
           <div className="inline-flex rounded-full border border-[var(--line)] bg-white/[0.06] px-4 py-2 text-sm text-[var(--sand)]">
-            East African electric mobility pioneer
+            Electric commercial vehicles for East Africa
           </div>
           <h1 className="mt-8 max-w-3xl text-5xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
-            Premium electric mobility by {COMPANY.brand},
-            <span className="block text-[var(--sand)]">built around {COMPANY.vehicleBrand} vehicles for East Africa.</span>
+            Electric fleets that work for real transport businesses.
+            <span className="block text-[var(--sand)]">{COMPANY.vehicleBrand} vehicles by {COMPANY.brand}.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-white/72">
-            {COMPANY.legalName} is the company behind the {COMPANY.vehicleBrand} trademark, delivering practical commercial EV platforms for shuttle operators, logistics teams, manufacturers, and ride-hailing fleets.
+            {COMPANY.legalName} supplies {COMPANY.vehicleBrand} electric shuttle, cargo, and commercial platforms for operators who need lower running costs, stronger uptime, and vehicles built for local conditions.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <Button onClick={() => scrollToId('book-demo')}>

@@ -42,9 +42,9 @@ export function LeadForm() {
       <Card className="bg-gradient-to-b from-white/10 to-white/5 shadow-2xl">
         <CardContent className="grid gap-4 md:grid-cols-2">
           <div className="md:col-span-2">
-            <div className="text-sm font-medium text-white">Request a commercial proposal</div>
+            <div className="text-sm font-medium text-white">Request pricing and availability</div>
             <p className="mt-2 max-w-2xl text-sm leading-6 text-white/60">
-              Share a few operating details and {COMPANY.legalName} can tailor pricing, fleet sizing, and route recommendations for your {COMPANY.vehicleBrand} requirements.
+              Share a few details about your route and fleet needs and our team will get back to you with the right vehicle options.
             </p>
           </div>
           <div>
@@ -76,7 +76,7 @@ export function LeadForm() {
             <Textarea id="lead-notes" placeholder="Tell us about your routes, payload, passenger volume, or fleet goals" value={form.notes} onChange={(e) => update('notes', e.target.value)} className="mt-3" />
           </div>
           <div className="grid gap-3 md:col-span-2 sm:grid-cols-2">
-            <Button onClick={emailLead}>Request Commercial Proposal</Button>
+            <Button onClick={emailLead}>Send Enquiry</Button>
             <Button variant="outline" onClick={whatsappLead}>Send to WhatsApp</Button>
           </div>
         </CardContent>
