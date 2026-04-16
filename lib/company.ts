@@ -1,6 +1,8 @@
 export const COMPANY = {
-  brand: 'Safari Freeway',
+  brand: 'Auto Freeway',
+  vehicleBrand: '',
   legalName: 'Auto Freeway Limited',
+  tagline: 'The Road Ahead is Electric',
   email: 'info@autofreeway.co.ke',
   phoneDisplay: '+254 726 025 019',
   phoneIntl: '254726025019',
@@ -18,17 +20,17 @@ export const NAV_ITEMS = [
 ] as const;
 
 export const STATS = [
-  { label: 'Real-world range', value: 'Up to 340 km' },
+  { label: 'Range envelope', value: '110-360 km' },
   { label: 'Battery warranty', value: '5 years' },
   { label: 'Fast charging', value: 'Up to 80 kW DC' },
   { label: 'Built for', value: 'East African roads' }
 ] as const;
 
 export const TRUST = [
-  'Electric commercial fleet portfolio tailored to East African transport and logistics operators',
-  'LFP battery platforms designed for lower running costs and fleet durability',
-  'Dealer, OEM, and local assembly strategy built for uptime and support',
-  'Fleet-ready models for shuttle, cargo, refrigerated, and utility operations'
+  'East African EV portfolio spanning shuttle, cargo, reefer, utility, and city transport segments',
+  'LFP battery platforms designed for dependable fleet economics, safety, and durability',
+  'OEM, dealer, and local CKD assembly strategy built around uptime and aftersales support',
+  'Vehicle platforms tailored to operators, manufacturers, couriers, and ride-hailing fleets'
 ] as const;
 
 export const FLEET = [
@@ -38,7 +40,8 @@ export const FLEET = [
     range: '300–360 km',
     battery: '65.17 kWh LFP',
     fastCharge: '40 kW DC',
-    useCase: 'Airport transfers, staff transport, hotel shuttles, SACCO routes'
+    useCase: 'Airport transfers, staff transport, hotel shuttles, SACCO routes',
+    image: '/fleet/chui-side.jpg'
   },
   {
     name: 'Safari Chui Wide Body',
@@ -46,15 +49,17 @@ export const FLEET = [
     range: '250 km',
     battery: '41.9 kWh LFP',
     fastCharge: '40 kW DC',
-    useCase: 'CBD routes, estates, school runs, urban transport'
+    useCase: 'CBD routes, estates, school runs, urban transport',
+    image: '/fleet/chui-front.jpg'
   },
   {
-    name: 'Safari Cheetar',
-    type: 'Cargo / Reefer Van',
+    name: 'Safari Duma',
+    type: '14-Seater / Cargo / Reefer Van',
     range: '225–250 km',
     battery: '41.9 kWh LFP',
     fastCharge: '40 kW DC',
-    useCase: 'Last-mile delivery, parcel logistics, cold-chain distribution'
+    useCase: 'Last-mile delivery, parcel logistics, cold-chain distribution',
+    image: '/brand/cover-fleet.jpg'
   },
   {
     name: 'Safari Ndovu',
@@ -62,7 +67,8 @@ export const FLEET = [
     range: '340 km',
     battery: '81.1 kWh LFP',
     fastCharge: '80 kW DC',
-    useCase: 'Bus bodies, school buses, cargo builds, fleet conversions'
+    useCase: 'Bus bodies, school buses, cargo builds, fleet conversions',
+    image: '/fleet/box-truck.jpg'
   },
   {
     name: 'Safari Kiboko',
@@ -70,7 +76,8 @@ export const FLEET = [
     range: '340 km',
     battery: '81.1 kWh LFP',
     fastCharge: '80 kW DC',
-    useCase: 'Cold-chain, food distribution, pharma delivery'
+    useCase: 'Cold-chain, food distribution, pharma delivery',
+    image: '/fleet/box-truck.jpg'
   },
   {
     name: 'Safari Swara',
@@ -78,30 +85,31 @@ export const FLEET = [
     range: '110 km',
     battery: '60–72V compatible',
     fastCharge: '6–8 hrs AC',
-    useCase: 'Short-hop urban passenger transport, estate taxis, feeder routes'
+    useCase: 'Short-hop urban passenger transport, estate taxis, feeder routes',
+    image: '/fleet/charging-shuttle.jpg'
   }
 ] as const;
 
 export const VISUALS = [
   {
-    title: 'Safari Chui Shuttle',
-    subtitle: 'Airport, hotel, staff, and route shuttle operations',
-    image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1200&q=80'
+    title: 'Cover Fleet',
+    subtitle: 'Van and truck platforms for passenger and cargo operations',
+    image: '/brand/cover-fleet.jpg'
   },
   {
-    title: 'Electric Cargo Van',
-    subtitle: 'Last-mile logistics and urban delivery fleets',
-    image: 'https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1200&q=80'
+    title: 'Charging Shuttle',
+    subtitle: 'Profile photo showing the Safari Freeway shuttle at charge',
+    image: '/fleet/charging-shuttle.jpg'
   },
   {
     title: 'Box Truck Platform',
-    subtitle: 'Commercial hauling and protected cargo movement',
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80'
+    subtitle: 'Profile image for the heavier-duty commercial platform',
+    image: '/fleet/box-truck.jpg'
   },
   {
-    title: 'Cold Chain Fleet',
-    subtitle: 'Temperature-controlled urban distribution',
-    image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=80'
+    title: 'Safari Chui Showcase',
+    subtitle: 'Flagship passenger transport platform for high-demand routes',
+    image: '/fleet/chui-side.jpg'
   }
 ] as const;
 

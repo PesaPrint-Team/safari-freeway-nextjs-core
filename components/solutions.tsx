@@ -1,4 +1,5 @@
 import { Bus, LineChart, Snowflake, Truck } from 'lucide-react';
+import { COMPANY } from '@/lib/company';
 import { Card, CardContent } from '@/components/ui';
 import { SectionHeading } from '@/components/section-heading';
 
@@ -31,7 +32,7 @@ export function Solutions() {
       <SectionHeading
         eyebrow="Solutions"
         title="Built for operators, not just drivers."
-        copy="From hotel shuttles to logistics companies and transport contractors, Safari Freeway is designed around commercial uptime, route economics, and executive-level fleet visibility."
+        copy={`From hotel shuttles to logistics companies and transport contractors, ${COMPANY.legalName} supports commercial uptime, route economics, and executive-level fleet visibility across the ${COMPANY.vehicleBrand} range.`}
       />
       <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
         {items.map((item) => {

@@ -1,3 +1,4 @@
+import { COMPANY } from '@/lib/company';
 import { BUSIGO_COMPARE } from '@/lib/company';
 import { SectionHeading } from '@/components/section-heading';
 
@@ -7,12 +8,12 @@ export function CompetitorSection() {
       <SectionHeading
         eyebrow="Market Leadership"
         title="Built to outperform legacy transport brands."
-        copy="Safari Freeway is positioned as a premium electric fleet ecosystem with stronger economics, executive control, and future-ready transport infrastructure."
+        copy={`${COMPANY.legalName} positions ${COMPANY.vehicleBrand} as a premium electric fleet ecosystem with stronger economics, executive control, and future-ready transport infrastructure.`}
       />
       <div className="mt-10 overflow-hidden rounded-[2rem] border border-white/10 bg-white/5">
         <div className="grid grid-cols-3 border-b border-white/10 bg-white/[0.04] p-4 text-sm font-semibold text-white">
           <div>Metric</div>
-          <div>Safari Freeway</div>
+          <div>{COMPANY.vehicleBrand}</div>
           <div>Typical Competitor</div>
         </div>
         {BUSIGO_COMPARE.map((row) => (

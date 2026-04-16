@@ -7,7 +7,7 @@ export { metadata };
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-[#050505] text-white antialiased">
+      <body className="bg-[var(--bg)] text-[var(--text)] antialiased">
         {children}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
       </body>

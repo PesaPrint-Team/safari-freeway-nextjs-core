@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import { COMPANY } from '@/lib/company';
 
 export const metadata: Metadata = {
-  title: 'Safari Freeway | Electric Fleet Solutions for Transport Companies',
+  title: 'Auto Freeway | Safari Freeway Electric Fleet Solutions',
   description:
-    'Safari Freeway helps transport companies deploy premium electric shuttle, cargo, and commercial fleets with ROI tools, booking flows, and executive-grade fleet visibility.',
+    'Auto Freeway Limited helps transport companies deploy Safari Freeway electric shuttle, cargo, and commercial fleets with ROI tools, booking flows, and executive-grade fleet visibility.',
   metadataBase: new URL(COMPANY.website),
   openGraph: {
-    title: 'Safari Freeway | Electric Fleet Solutions',
+    title: 'Auto Freeway | Safari Freeway Electric Fleet Solutions',
     description:
-      'Premium electric fleet platform for transport operators, logistics companies, hotels, and enterprise buyers.',
+      'Premium Safari Freeway electric fleet platform for transport operators, logistics companies, hotels, and enterprise buyers.',
     url: COMPANY.website,
     siteName: COMPANY.brand,
     type: 'website'
@@ -20,7 +20,7 @@ export const organizationJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: COMPANY.legalName,
-  brand: COMPANY.brand,
+  brand: COMPANY.vehicleBrand,
   url: COMPANY.website,
   email: COMPANY.email,
   telephone: COMPANY.phoneDisplay,
@@ -30,5 +30,5 @@ export const organizationJsonLd = {
     addressCountry: 'KE'
   },
   areaServed: 'East Africa',
-  description: 'Electric commercial vehicles and fleet solutions for transport companies.'
+  description: 'Safari Freeway electric commercial vehicles and fleet solutions for transport companies.'
 };

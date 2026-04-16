@@ -1,8 +1,9 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ChevronRight, ShieldCheck, Wallet } from 'lucide-react';
-import { STATS } from '@/lib/company';
+import { COMPANY, STATS } from '@/lib/company';
 import { Button } from '@/components/ui';
 
 function scrollToId(id: string) {
@@ -12,19 +13,18 @@ function scrollToId(id: string) {
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.14),transparent_30%),radial-gradient(circle_at_top_left,rgba(255,255,255,0.08),transparent_25%)]" />
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-24">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(207,52,57,0.22),transparent_24%),radial-gradient(circle_at_85%_20%,rgba(241,223,207,0.16),transparent_24%)]" />
+      <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 py-12 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-20">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-          <div className="inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80">
-            Premium electric fleets for transport companies
+          <div className="inline-flex rounded-full border border-[var(--line)] bg-white/[0.06] px-4 py-2 text-sm text-[var(--sand)]">
+            East African electric mobility pioneer
           </div>
-          <h1 className="mt-6 text-5xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
-            Move more.
-            <span className="block text-white/70">Spend less.</span>
-            <span className="block">Electrify with confidence.</span>
+          <h1 className="mt-8 max-w-3xl text-5xl font-semibold tracking-tight text-white sm:text-6xl lg:text-7xl">
+            Premium electric mobility by {COMPANY.brand},
+            <span className="block text-[var(--sand)]">built around {COMPANY.vehicleBrand} vehicles for East Africa.</span>
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-white/65">
-            Safari Freeway helps transport operators reduce operating cost, increase trust, and modernize fleet operations with elite electric commercial vehicles built for East African realities.
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-white/72">
+            {COMPANY.legalName} is the company behind the {COMPANY.vehicleBrand} trademark, delivering practical commercial EV platforms for shuttle operators, logistics teams, manufacturers, and ride-hailing fleets.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <Button onClick={() => scrollToId('book-demo')}>
@@ -34,7 +34,7 @@ export function Hero() {
           </div>
           <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
             {STATS.map((item) => (
-              <div key={item.label} className="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div key={item.label} className="rounded-[1.6rem] border border-[var(--line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] p-4 backdrop-blur-sm">
                 <div className="text-lg font-semibold text-white">{item.value}</div>
                 <div className="mt-1 text-xs uppercase tracking-[0.25em] text-white/45">{item.label}</div>
               </div>
@@ -43,29 +43,40 @@ export function Hero() {
         </motion.div>
 
         <motion.div initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6 }}>
-          <div className="rounded-[2rem] border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-4 shadow-[0_30px_120px_rgba(0,0,0,0.45)]">
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-3xl border border-white/10 bg-white/5 p-5">
+          <div className="relative overflow-hidden rounded-[2.4rem] border border-[var(--line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] p-4 shadow-[0_30px_120px_rgba(0,0,0,0.45)]">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(207,52,57,0.18),transparent_36%)]" />
+            <div className="relative">
+              <div className="relative h-[340px] overflow-hidden rounded-[2rem]">
+                <Image src="/brand/cover-fleet.jpg" alt={`${COMPANY.vehicleBrand} fleet cover`} fill className="object-cover" priority />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0d0908] via-[#0d0908]/15 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <div className="text-xs uppercase tracking-[0.32em] text-[var(--sand)]">Electric fleet lineup</div>
+                  <div className="mt-2 max-w-md text-3xl font-semibold text-white">Passenger and cargo platforms designed for modern transport operators.</div>
+                </div>
+              </div>
+            </div>
+            <div className="relative mt-4 grid gap-4 sm:grid-cols-2">
+              <div className="rounded-3xl border border-[var(--line)] bg-black/20 p-5">
                 <div className="flex items-center justify-between">
                   <div>
-                    <div className="text-sm text-white/50">Fleet energy cost</div>
+                    <div className="text-sm text-white/50">Lower running costs</div>
                     <div className="mt-1 text-3xl font-semibold text-white">-58%</div>
                   </div>
-                  <Wallet className="h-9 w-9 text-white/70" />
+                  <Wallet className="h-9 w-9 text-[var(--sand)]" />
                 </div>
               </div>
-              <div className="rounded-3xl border border-white/10 bg-white/5 p-5">
+              <div className="rounded-3xl border border-[var(--line)] bg-black/20 p-5">
                 <div className="flex items-center justify-between">
                   <div>
-                    <div className="text-sm text-white/50">Uptime status</div>
+                    <div className="text-sm text-white/50">Support readiness</div>
                     <div className="mt-1 text-3xl font-semibold text-white">98.2%</div>
                   </div>
-                  <ShieldCheck className="h-9 w-9 text-white/70" />
+                  <ShieldCheck className="h-9 w-9 text-[var(--sand)]" />
                 </div>
               </div>
-              <div className="rounded-3xl border border-white/10 bg-white/5 p-5 sm:col-span-2">
-                <div className="text-sm text-white/50">Executive fleet command</div>
-                <div className="mt-1 text-2xl font-semibold text-white">Bookings. Routing. Charging. Service.</div>
+              <div className="rounded-3xl border border-[var(--line)] bg-black/20 p-5 sm:col-span-2">
+                <div className="text-sm text-white/50">Built for transport operators</div>
+                <div className="mt-1 text-2xl font-semibold text-white">Fleet performance. Route fit. Commercial confidence.</div>
               </div>
             </div>
           </div>

@@ -17,7 +17,7 @@ export function WhatsappSection() {
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Button onClick={() => window.open(buildWhatsAppUrl('Hello Safari Freeway. I need pricing and availability.'), '_blank')}>Chat on WhatsApp</Button>
+            <Button onClick={() => window.open(buildWhatsAppUrl(`Hello ${COMPANY.brand}. I need pricing and availability for ${COMPANY.vehicleBrand} vehicles.`), '_blank')}>Chat on WhatsApp</Button>
             <Button variant="outline" onClick={() => (window.location.href = `tel:${COMPANY.phoneIntl}`)}>Call Sales Desk</Button>
           </div>
         </div>
