@@ -12,8 +12,18 @@ This is a deployment-ready Next.js App Router starter for the Safari Freeway com
 
 ## Quick start
 ```bash
-npm install
-npm run dev
+bun install
+bun run dev
+```
+
+This project uses Bun as the package manager. The Bun scripts launch Next.js through a small Node wrapper so the app can reliably use the WASM SWC fallback on this setup.
+
+If you want a fresh local install:
+
+```bash
+rm -rf node_modules
+bun install
+bun run dev
 ```
 
 ## Replace before production
