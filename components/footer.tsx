@@ -15,7 +15,7 @@ export function Footer() {
               <Image src="/brand/safari-freeway-logo.png" alt={`${COMPANY.vehicleBrand} logo`} width={520} height={320} className="h-14 w-auto" />
             </div>
           </div>
-          <p className="mt-4 text-sm leading-7 text-white/50">{COMPANY.legalName} delivers {COMPANY.vehicleBrand} electric mobility solutions for transport companies, logistics operators, manufacturers, and commercial fleets across East Africa.</p>
+          <p className="mt-4 text-sm leading-7 text-white/50">{COMPANY.legalName} supplies {COMPANY.vehicleBrand} electric vehicles to transport operators, logistics firms, manufacturers, and commercial fleets across East Africa.</p>
         </div>
         <div>
           <div className="text-sm font-semibold text-white">Solutions</div>

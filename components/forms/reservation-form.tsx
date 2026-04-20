@@ -8,18 +8,18 @@ type BuyerType = 'consumer' | 'fleet' | 'partner';
 
 const audiencePaths: Record<BuyerType, { title: string; body: string; cta: string }> = {
   consumer: {
-    title: 'For Consumer Buyers',
-    body: 'Reserve early access, track launch updates, and position yourself for first-drive opportunities in your market.',
+    title: 'For buyers',
+    body: 'Reserve early access and get first-drive priority when vehicles land in your city.',
     cta: 'Reserve as a Buyer',
   },
   fleet: {
-    title: 'For Fleets & Institutions',
-    body: 'Capture commercial demand, begin deployment planning, and open a serious conversation around total cost of ownership.',
+    title: 'For fleets and institutions',
+    body: 'Start deployment planning and get proper TCO numbers for your fleet.',
     cta: 'Request Fleet Access',
   },
   partner: {
-    title: 'For Infrastructure & Strategic Partners',
-    body: 'Explore charging partnerships, destination charging rollouts, energy collaborations, and distribution pathways.',
+    title: 'For infrastructure and strategic partners',
+    body: 'For charging networks, energy companies, and distribution partners interested in working with us.',
     cta: 'Partner With Safari Freeway',
   },
 };
@@ -63,10 +63,7 @@ export function ReservationForm() {
     setForm((prev) => ({ ...prev, [key]: value }));
 
   return (
-    <div
-      id="reserve"
-      className="rounded-[2rem] border border-[var(--line)] bg-[var(--surface)] p-6 shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-8"
-    >
+    <div className="rounded-[2rem] border border-[var(--line)] bg-[var(--surface)] p-6 shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-8">
       {/* Buyer type tabs */}
       <div className="flex items-center justify-between gap-4">
         <div className="flex flex-wrap gap-2">

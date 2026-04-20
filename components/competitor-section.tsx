@@ -7,9 +7,9 @@ export function CompetitorSection() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
       <SectionHeading
-        eyebrow="Market Leadership"
-        title="Built to outperform legacy transport brands."
-        copy={`${COMPANY.legalName} positions ${COMPANY.vehicleBrand} as a premium electric fleet ecosystem with stronger economics, executive control, and future-ready transport infrastructure.`}
+        eyebrow="How we compare"
+        title="Safari Freeway vs. the legacy fleet brands."
+        copy={`A quick comparison of what ${COMPANY.vehicleBrand} offers operators versus the diesel-first brands most Kenyan fleets are still running.`}
       />
       <Reveal>
         <div className="mt-10 overflow-hidden rounded-[2rem] border border-white/10 bg-white/5">

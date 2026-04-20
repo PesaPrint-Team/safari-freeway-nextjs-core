@@ -7,22 +7,22 @@ import { Reveal } from '@/components/animated';
 const items = [
   {
     title: 'Staff & shuttle transport',
-    copy: 'Replace diesel-heavy employee, hotel, airport, and institutional routes with predictable electric fleet economics.',
+    copy: 'Run employee buses, hotel shuttles, and airport transfers with lower fuel and maintenance costs.',
     icon: Bus
   },
   {
     title: 'Urban cargo & logistics',
-    copy: 'Deploy electric vans and light trucks for parcel, FMCG, and B2B distribution while reducing fuel exposure.',
+    copy: 'Electric vans and light trucks for parcel delivery, FMCG, and B2B distribution.',
     icon: Truck
   },
   {
     title: 'Cold-chain distribution',
-    copy: 'Move food, pharma, and temperature-sensitive cargo in electric reefer platforms with fleet-grade control.',
+    copy: 'Move food, pharma, and temperature-sensitive cargo in electric refrigerated trucks.',
     icon: Snowflake
   },
   {
     title: 'Fleet digitization',
-    copy: 'Operate bookings, dispatch, energy planning, and maintenance visibility through one executive control layer.',
+    copy: 'Track bookings, dispatch, charging, and maintenance from one dashboard.',
     icon: LineChart
   }
 ] as const;
@@ -32,8 +32,8 @@ export function Solutions() {
     <section id="solutions" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
       <SectionHeading
         eyebrow="Solutions"
-        title="Built for operators, not just drivers."
-        copy={`From hotel shuttles to logistics companies and transport contractors, ${COMPANY.legalName} supports commercial uptime, route economics, and executive-level fleet visibility across the ${COMPANY.vehicleBrand} range.`}
+        title="Solutions for fleet operators."
+        copy={`From hotel shuttles to logistics companies, ${COMPANY.vehicleBrand} vehicles cover the routes, schedules, and payloads Kenyan transport businesses actually run.`}
       />
       <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
         {items.map((item, index) => {

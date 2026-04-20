@@ -18,15 +18,12 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-html,
-body {
-  overflow-x: hidden;
+  scroll-padding-top: 96px;
 }
 
 body {
   min-height: 100vh;
+  overflow-x: clip;
   background:
     radial-gradient(circle at top left, rgba(207, 52, 57, 0.16), transparent 30%),
     radial-gradient(circle at top right, rgba(241, 223, 207, 0.1), transparent 28%),

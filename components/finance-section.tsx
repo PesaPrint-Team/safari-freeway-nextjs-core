@@ -28,8 +28,8 @@ export function FinanceSection() {
       <div className="space-y-6">
         <SectionHeading
           eyebrow="Finance"
-          title="Finance snapshot"
-          copy="A simple estimate for structuring a single vehicle purchase."
+          title="Monthly repayment estimate."
+          copy="A rough estimate of the monthly repayment for a single vehicle purchase."
         />
 
         <Card className="bg-gradient-to-b from-white/8 to-white/[0.03] shadow-2xl">

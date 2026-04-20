@@ -18,8 +18,8 @@ export function FleetGrid() {
     <section id="fleet" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
       <SectionHeading
         eyebrow="Fleet"
-        title="A commercial electric lineup that covers your routes end to end."
-        copy="Premium shuttle vehicles, cargo vans, refrigerated trucks, and configurable platforms designed to help transport companies electrify without compromise."
+        title="The full Safari Freeway lineup."
+        copy="Six models covering passenger shuttles, cargo vans, refrigerated trucks, and configurable chassis platforms."
       />
       <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
         {FLEET.map((item, index) => {

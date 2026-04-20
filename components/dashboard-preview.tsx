@@ -1,7 +1,13 @@
+'use client';
+
 import { BatteryCharging, Gauge, MapPinned, Zap } from 'lucide-react';
 import { Button } from '@/components/ui';
 import { SectionHeading } from '@/components/section-heading';
 import { Reveal } from '@/components/animated';
+
+function scrollToId(id: string) {
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
 
 const cards = [
   { title: 'Bookings', value: '1,284', icon: MapPinned, meta: '+18% this week' },
@@ -17,7 +23,7 @@ export function DashboardPreview() {
         <SectionHeading
           eyebrow="Dashboard"
           title="Fleet visibility in one place."
-          copy="A simple preview of the tools operators can use to track bookings, charging, service activity, and overall vehicle utilization."
+          copy="A preview of the operator dashboard. Track bookings, charging, service, and vehicle utilization from one screen."
         />
         <Reveal className="rounded-[2rem] border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-4 shadow-2xl">
           <div className="grid gap-4 md:grid-cols-2">
@@ -46,7 +52,7 @@ export function DashboardPreview() {
                   <div className="text-sm text-white/50">Charging and service timeline</div>
                   <div className="mt-1 text-xl font-semibold text-white">Smart fleet scheduling panel</div>
                 </div>
-                <Button variant="outline">Live preview</Button>
+                <Button variant="outline" onClick={() => scrollToId('book-demo')}>Request Access</Button>
               </div>
             </div>
           </Reveal>

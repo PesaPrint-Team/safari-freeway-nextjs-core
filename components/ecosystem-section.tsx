@@ -7,25 +7,25 @@ const nodes = [
   {
     icon: Home,
     title: 'Home charging',
-    copy: 'Inexpensive overnight AC top-ups at 6.6 kW. Driver-owned fleets and executive vehicles reset to a full battery by dawn — no public infrastructure required.',
+    copy: 'Overnight 6.6 kW AC top-ups. A full battery by morning, with no public infrastructure required.',
     meta: '6.6 kW AC',
   },
   {
     icon: Building2,
     title: 'Workplace charging',
-    copy: 'Corporate campuses, hotels, hospitals, and offices can install right-sized AC charging to power shuttles and staff vehicles during work hours.',
+    copy: 'Campuses, hotels, hospitals, and offices install AC chargers to top up shuttles and staff vehicles during the workday.',
     meta: '6.6 kW AC',
   },
   {
     icon: Warehouse,
     title: 'Depot & fleet charging',
-    copy: 'Mixed AC and DC setups for SACCO, logistics, and cold-chain operators. Schedules align with dispatch windows and off-peak tariffs.',
+    copy: 'Mixed AC and DC setups for SACCO, logistics, and cold-chain fleets. Plans align with dispatch windows and off-peak tariffs.',
     meta: '6.6 kW AC · 40–80 kW DC',
   },
   {
     icon: MapPin,
     title: 'Destination & fast charging',
-    copy: 'A 40 kW DC session adds roughly 160 km in under an hour on Chui and Duma. 80 kW DC restores most of a 340 km Ndovu range inside a long coffee stop.',
+    copy: 'A 40 kW DC session adds about 160 km to a Chui in under an hour. An 80 kW DC session restores most of a Ndovu\u2019s 340 km range in about the same time.',
     meta: '40 kW · 80 kW DC',
   },
 ] as const;
@@ -34,9 +34,9 @@ export function EcosystemSection() {
   return (
     <section id="ecosystem" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
       <SectionHeading
-        eyebrow="Charging Ecosystem"
-        title={`${COMPANY.vehicleBrand} is not just a vehicle brand — it is an operating ecosystem.`}
-        copy="Fleet electrification works when charging matches the route. Our charging model is practical: home, workplace, depot, and destination — tuned to how East African operators actually run."
+        eyebrow="Charging"
+        title="Where and how you charge."
+        copy={`Charging matched to how fleets actually operate. Home, workplace, depot, and destination — each tuned to the way ${COMPANY.vehicleBrand} vehicles are used.`}
       />
 
       <div className="mt-10 grid gap-5 md:grid-cols-2">
@@ -68,7 +68,7 @@ export function EcosystemSection() {
 
       <Reveal delay={0.25}>
         <div className="mt-8 rounded-[2rem] border border-[var(--line)] bg-[linear-gradient(120deg,rgba(207,52,57,0.18),rgba(255,255,255,0.04))] p-6 text-sm leading-7 text-white/75 sm:p-8">
-          <span className="font-semibold text-white">Battery warranty:</span> 5 years or 200,000 km on the battery, motor, and motor controller — the parts that matter most for long-term fleet economics.
+          <span className="font-semibold text-white">Battery warranty:</span> 5 years or 200,000 km on the battery, motor, and motor controller.
         </div>
       </Reveal>
     </section>

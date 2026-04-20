@@ -50,8 +50,8 @@ export function RoiSection() {
       <div className="space-y-6">
         <SectionHeading
           eyebrow="ROI"
-          title="See the operating cost gap clearly."
-          copy="Use your fleet assumptions to compare diesel and electric running costs over the first year."
+          title="Compare diesel to electric."
+          copy="Enter your fleet numbers to see diesel and electric running costs side-by-side for the first 12 months."
         />
 
         <Card className="bg-gradient-to-b from-white/10 to-white/5 shadow-2xl">

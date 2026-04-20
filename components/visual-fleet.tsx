@@ -7,9 +7,9 @@ export function VisualFleet() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
       <SectionHeading
-        eyebrow="Visual Fleet"
-        title="Electric vehicles built for real transport work."
-        copy={`${COMPANY.vehicleBrand} brings together shuttle, cargo, and commercial platforms designed for operators who need reliability, efficiency, and lower running costs.`}
+        eyebrow="The Fleet"
+        title="The Safari Freeway range in pictures."
+        copy="Shuttles, cargo vans, refrigerated trucks, and tricycles from the current Safari Freeway lineup."
       />
       <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
         {VISUALS.map((item, index) => (

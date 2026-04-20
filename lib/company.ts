@@ -27,10 +27,10 @@ export const STATS = [
 ] as const;
 
 export const TRUST = [
-  'East African EV portfolio spanning shuttle, cargo, reefer, utility, and city transport segments',
-  'LFP battery platforms designed for dependable fleet economics, safety, and durability',
-  'OEM, dealer, and local CKD assembly strategy built around uptime and aftersales support',
-  'Vehicle platforms tailored to operators, manufacturers, couriers, and ride-hailing fleets'
+  'Full East African EV range: shuttles, cargo vans, refrigerated trucks, chassis trucks, and tricycles',
+  'LFP batteries from GOTION High-Tech and EVE with a 5-year warranty',
+  'Backed by global OEMs and local Kenyan CKD assembly for parts and service',
+  'Vehicles for transport operators, logistics firms, couriers, and ride-hailing fleets'
 ] as const;
 
 export const FLEET = [
@@ -92,31 +92,31 @@ export const FLEET = [
 
 export const VISUALS = [
   {
-    title: 'Cover Fleet',
-    subtitle: 'Van and truck platforms for passenger and cargo operations',
+    title: 'Van and truck range',
+    subtitle: 'Passenger and cargo vehicles for commercial operators',
     image: '/brand/cover-fleet.jpg'
   },
   {
-    title: 'Charging Shuttle',
-    subtitle: 'Profile photo showing the Safari Freeway shuttle at charge',
+    title: 'Safari Chui at charge',
+    subtitle: 'Shuttle on an AC charging cycle',
     image: '/fleet/charging-shuttle.jpg'
   },
   {
-    title: 'Box Truck Platform',
-    subtitle: 'Profile image for the heavier-duty commercial platform',
+    title: 'Safari Mamba box truck',
+    subtitle: 'Light commercial box body, 5-ton GVW',
     image: '/fleet/box-truck.jpg'
   },
   {
-    title: 'Safari Chui Showcase',
-    subtitle: 'Flagship passenger transport platform for high-demand routes',
+    title: 'Safari Chui',
+    subtitle: '17-seater shuttle for airport, hotel, and SACCO routes',
     image: '/fleet/chui-side.jpg'
   }
 ] as const;
 
 export const BUSIGO_COMPARE = [
-  ['Positioning', 'Premium electric fleet platform', 'Conventional booking-led perception'],
-  ['Operating cost story', 'Fuel savings + maintenance reduction', 'Limited EV economics narrative'],
-  ['Fleet breadth', 'Shuttle, cargo, reefer, utility', 'Narrower public perception'],
-  ['Executive tools', 'ROI + dashboard + enterprise lead flow', 'Basic booking expectation'],
-  ['Brand optics', 'Elite / future-forward / corporate', 'Functional transport brand']
+  ['Positioning', 'Electric fleet platform', 'Booking-first mindset'],
+  ['Operating cost', 'Fuel and maintenance savings', 'No EV cost story'],
+  ['Fleet range', 'Shuttle, cargo, reefer, utility, tricycle', 'Mostly passenger buses'],
+  ['Operator tools', 'ROI, dashboard, enterprise sales flow', 'Basic bookings only'],
+  ['Brand', 'Commercial, modern, investor-ready', 'Everyday transport']
 ] as const;

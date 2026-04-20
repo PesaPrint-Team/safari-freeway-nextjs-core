@@ -13,33 +13,33 @@ import { Reveal } from '@/components/animated';
 const pillars = [
   {
     icon: BatteryCharging,
-    title: 'LFP battery platforms',
-    copy: 'Lithium-iron-phosphate packs from GOTION High-Tech and EVE — chosen for safety, thermal stability, and dependable commercial lifecycle.',
+    title: 'LFP battery packs',
+    copy: 'Lithium-iron-phosphate packs from GOTION High-Tech and EVE. Safer and longer-lasting than NMC for commercial use.',
   },
   {
     icon: ShieldCheck,
     title: '5-year battery warranty',
-    copy: 'Up to 200,000 km of coverage on the battery, motor, and motor controller. Tiered warranty across chassis, body, and controllers for predictable fleet TCO.',
+    copy: '5 years or 200,000 km on the battery, motor, and controller. Chassis and body get their own tiered coverage on top.',
   },
   {
     icon: CircuitBoard,
     title: 'CAN-bus diagnostics',
-    copy: 'Every vehicle ships with real-time fleet health telemetry, giving operators service clarity and reducing surprise downtime.',
+    copy: 'Real-time vehicle health data. Fleet managers see issues before they become breakdowns.',
   },
   {
     icon: Mountain,
     title: 'Built for African roads',
-    copy: 'McPherson front suspension, leaf-spring rear, ≥20% gradeability, and waterproof wiring looms engineered to survive flood season and heat.',
+    copy: 'McPherson front suspension, leaf-spring rear, 20%+ gradeability, and waterproof wiring for flood season.',
   },
   {
     icon: Droplets,
     title: 'Liquid-cooled packs',
-    copy: 'Batteries live low in the floor, liquid-cooled to shrug off equatorial heat and pothole punishment without throttling performance.',
+    copy: 'Batteries sit low in the floor and are liquid-cooled for equatorial heat and rough road surfaces.',
   },
   {
     icon: Cog,
     title: 'Operator-friendly cabins',
-    copy: 'RHD electric power-assist steering, ABS disc/drum brakes, anti-slip vinyl flooring, and a 24V body-builder interface for easy conversions.',
+    copy: 'RHD electric power-assist steering, ABS brakes, anti-slip vinyl floors, and a 24V body-builder interface.',
   },
 ] as const;
 
@@ -48,8 +48,8 @@ export function TechnologySection() {
     <section id="technology" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
       <SectionHeading
         eyebrow="Technology & Safety"
-        title="Engineered for the routes, climates, and economics of East Africa."
-        copy="Every Safari Freeway™ vehicle is built around the three things fleet operators actually measure: uptime, running cost, and safety. The specs below are standard across the lineup."
+        title="Specs that matter for commercial fleets."
+        copy="The specs below are standard across every Safari Freeway model. Uptime, running cost, and safety — the three things fleet operators measure."
       />
       <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
         {pillars.map((pillar, index) => {

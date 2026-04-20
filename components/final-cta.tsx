@@ -15,9 +15,9 @@ export function FinalCta() {
         <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
           <div>
             <div className="text-xs font-semibold uppercase tracking-[0.35em] text-[var(--sand)]">{COMPANY.vehicleBrand}</div>
-            <h3 className="mt-4 text-2xl font-semibold text-white sm:text-3xl lg:text-4xl">The premium electric fleet partner for the next decade of transport.</h3>
+            <h3 className="mt-4 text-2xl font-semibold text-white sm:text-3xl lg:text-4xl">The electric fleet partner your business needs.</h3>
             <p className="mt-4 max-w-3xl text-base leading-7 text-white/60">
-              {COMPANY.legalName} delivers the {COMPANY.vehicleBrand} range for businesses looking to modernize transport, reduce fuel exposure, and grow with confidence.
+              {COMPANY.legalName} supplies {COMPANY.vehicleBrand} vehicles to Kenyan businesses cutting fuel costs and switching to electric.
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">

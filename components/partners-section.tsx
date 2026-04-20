@@ -6,46 +6,46 @@ import { Reveal } from '@/components/animated';
 const partners = [
   {
     name: 'GOTION High-Tech',
-    role: 'LFP battery technology',
-    blurb: 'Lithium-iron-phosphate packs powering Safari Chui and Safari Duma — safe, long-cycle, commercial-grade chemistry.',
+    role: 'LFP battery supplier',
+    blurb: 'LFP battery packs used in Safari Chui and Safari Duma.',
   },
   {
     name: 'EVE Energy',
-    role: 'LFP battery technology',
-    blurb: 'High-capacity LFP packs on Safari Ndovu, Mamba, Nyati, and Kiboko — 81 kWh and 340 km of real-world range.',
+    role: 'LFP battery supplier',
+    blurb: '81 kWh LFP packs in Safari Ndovu, Mamba, Nyati, and Kiboko. 340 km of real-world range.',
   },
   {
     name: 'Global OEM alliances',
     role: 'Manufacturing partners',
-    blurb: 'Binding agreements with top-tier EV producers guarantee uninterrupted supply chains, transparent pricing, and authentic parts.',
+    blurb: 'Direct OEM agreements for supply, pricing, and authentic parts.',
   },
   {
     name: 'Local CKD assembly',
     role: 'Kenyan manufacturing',
-    blurb: 'Complete Knock-Down kits assembled on Kenyan soil — trimming import costs, creating local jobs, and tuning every vehicle for East African conditions.',
+    blurb: 'CKD kits assembled in Kenya. Lower import costs, local jobs, and vehicles tuned for local conditions.',
   },
 ] as const;
 
 const pillars = [
   {
     icon: Globe2,
-    title: 'East African mobility pioneer',
-    copy: 'Auto Freeway Limited is steering the region toward an all-electric future — designed for local roads, budgets, and business goals.',
+    title: 'East African focus',
+    copy: 'We build commercial EVs for Kenyan roads, budgets, and operators. Not repackaged European fleet vehicles.',
   },
   {
     icon: Factory,
     title: 'Kenyan CKD assembly',
-    copy: 'Assembling Complete Knock-Down kits on Kenyan soil trims import costs, creates local jobs, and tunes every vehicle for the East African climate.',
+    copy: 'CKD assembly in Kenya reduces import costs, creates local jobs, and lets us tune each vehicle for the climate.',
   },
   {
     icon: Handshake,
     title: 'Dealer network expansion',
-    copy: 'Establishing Safari Freeway showrooms and after-sales support across key urban and peri-urban hubs — raising the industry benchmark.',
+    copy: 'Rolling out Safari Freeway showrooms and service centers across Kenya\u2019s main urban and peri-urban hubs.',
   },
   {
     icon: TrendingUp,
     title: 'Investor-ready platform',
-    copy: 'Nine vehicle platforms, tiered warranty, recurring fleet revenue, and a regional expansion story open to institutional and strategic capital.',
+    copy: 'Nine vehicle platforms, tiered warranties, recurring fleet revenue, and a regional expansion roadmap.',
   },
 ] as const;
 
@@ -54,8 +54,8 @@ export function PartnersSection() {
     <section id="investors" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
       <SectionHeading
         eyebrow="Investors & Partners"
-        title="A platform built on serious partnerships."
-        copy={`${COMPANY.legalName} is backed by global OEM alliances, commercial battery partners, and local Kenyan CKD assembly — engineered for long-term deployment across East Africa.`}
+        title="The partners behind the fleet."
+        copy={`${COMPANY.legalName} works with global OEMs, top LFP battery suppliers, and Kenyan CKD assemblers to deliver every ${COMPANY.vehicleBrand} vehicle.`}
       />
 
       <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -92,7 +92,7 @@ export function PartnersSection() {
 
       <Reveal delay={0.35}>
         <div className="mt-10 rounded-[2rem] border border-[var(--line)] bg-[linear-gradient(120deg,rgba(207,52,57,0.18),rgba(255,255,255,0.04))] p-6 text-sm leading-7 text-white/75 sm:p-8">
-          <span className="font-semibold text-white">For investors, dealers, and infrastructure partners:</span> Auto Freeway Limited is actively expanding showroom coverage, building out charging collaborations, and welcoming conversations with institutional buyers and strategic partners. Use the Priority Access form to open a confidential dialogue.
+          <span className="font-semibold text-white">Investors, dealers, and charging partners:</span> we&apos;re expanding dealer coverage and welcoming new collaborations. Use the Priority Access form below to get in touch.
         </div>
       </Reveal>
     </section>

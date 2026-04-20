@@ -43,23 +43,23 @@ export default function Page() {
               Priority Access
             </div>
             <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-tight text-[var(--text)] sm:text-4xl lg:text-5xl">
-              Reserve your place in Africa&apos;s electric future.
+              Reserve a Safari Freeway vehicle.
             </h2>
             <p className="mt-5 max-w-md text-base leading-7 text-[var(--muted)] sm:leading-8">
-              Whether you are a consumer buyer, fleet operator, or infrastructure partner — secure early access and open a direct conversation with our team.
+              Three ways to get early access: as a buyer, as a fleet operator, or as a partner. Pick your track below.
             </p>
             <ul className="mt-6 grid gap-3 text-sm text-[var(--muted-soft)] sm:mt-8">
               <li className="flex items-start gap-3">
                 <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--brand)]" />
-                Consumer buyers: first-drive priority and launch updates
+                Buyers: first-drive priority and launch updates
               </li>
               <li className="flex items-start gap-3">
                 <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--brand)]" />
-                Fleets: deployment planning and total cost of ownership dialogue
+                Fleets: deployment planning and TCO numbers
               </li>
               <li className="flex items-start gap-3">
                 <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--brand)]" />
-                Partners: charging, energy, and distribution pathways
+                Partners: charging, energy, and distribution
               </li>
             </ul>
           </div>
@@ -75,10 +75,10 @@ export default function Page() {
               Test Drive
             </div>
             <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-tight text-[var(--text)] sm:text-4xl lg:text-5xl">
-              Not ready to reserve? Book the next step.
+              Book a test drive.
             </h2>
             <p className="mt-5 max-w-md text-base leading-7 text-[var(--muted)] sm:leading-8">
-              Experience a Safari Freeway vehicle first-hand. Our team will confirm a slot in your city and walk you through the full platform.
+              Try a Safari Freeway vehicle in person. We&apos;ll confirm a slot in your city and answer questions directly.
             </p>
           </div>
           <TestDriveForm />
