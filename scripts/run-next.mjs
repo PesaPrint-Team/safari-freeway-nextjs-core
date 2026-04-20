@@ -10,10 +10,7 @@ process.on('SIGUSR1', () => {});
 
 const child = spawn(process.execPath, [nextBin, ...args], {
   stdio: 'inherit',
-  env: {
-    ...process.env,
-    NEXT_TEST_WASM: process.env.NEXT_TEST_WASM ?? '1'
-  }
+  env: process.env
 });
 
 for (const signal of ['SIGINT', 'SIGTERM', 'SIGHUP']) {

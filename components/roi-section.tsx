@@ -46,7 +46,7 @@ export function RoiSection() {
   const yearOne = timeline[timeline.length - 1] ?? { diesel: 0, electric: 0, savings: 0 };
 
   return (
-    <section id="roi" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+    <section id="roi" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
       <div className="space-y-6">
         <SectionHeading
           eyebrow="ROI"
@@ -55,7 +55,7 @@ export function RoiSection() {
         />
 
         <Card className="bg-gradient-to-b from-white/10 to-white/5 shadow-2xl">
-          <CardContent className="space-y-6 lg:p-8">
+          <CardContent className="space-y-6 p-4 sm:p-6 lg:p-8">
             <div className="grid gap-4 lg:grid-cols-[repeat(3,minmax(0,1fr))_auto]">
               <div className="rounded-[1.6rem] border border-white/10 bg-white/5 p-4">
                 <label htmlFor="roi-fleet-size" className="text-sm font-medium text-white/80">
@@ -106,11 +106,11 @@ export function RoiSection() {
             </div>
 
             <div className="grid gap-6 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,280px)]">
-              <div className="rounded-[1.85rem] border border-white/10 bg-black/20 p-5 sm:p-6">
+              <div className="rounded-[1.85rem] border border-white/10 bg-black/20 p-4 sm:p-6">
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
                   <div>
                     <div className="text-sm text-white/50">12-month spend comparison</div>
-                    <div className="mt-1 text-2xl font-semibold text-white">Diesel vs electric fleet cost</div>
+                    <div className="mt-1 text-xl font-semibold text-white sm:text-2xl">Diesel vs electric fleet cost</div>
                   </div>
 
                   <div className="hidden w-fit rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs text-white/55 sm:block">
@@ -118,8 +118,8 @@ export function RoiSection() {
                   </div>
                 </div>
 
-                <div className="mt-6 rounded-[1.5rem] border border-white/10 bg-[#0a0a0a] p-3 sm:p-5">
-                  <div className="h-[280px] sm:h-[320px]">
+                <div className="mt-6 rounded-[1.5rem] border border-white/10 bg-[#0a0a0a] p-2 sm:p-5">
+                  <div className="h-[240px] sm:h-[320px]">
                     <ResponsiveContainer width="100%" height="100%">
                       <BarChart data={timeline} margin={{ top: 8, right: 4, left: -20, bottom: 0 }} barGap={6} barCategoryGap="18%">
                         <CartesianGrid stroke="rgba(255,255,255,0.08)" strokeDasharray="3 6" vertical={false} />
@@ -152,15 +152,15 @@ export function RoiSection() {
                 <div className="mt-5 grid gap-3 sm:grid-cols-3">
                   <div className="rounded-[1.4rem] border border-white/10 bg-white/5 p-4">
                     <div className="text-sm text-white/50">Diesel per month</div>
-                    <div className="mt-2 text-xl font-semibold text-white">{formatKes(results.dieselMonthly)}</div>
+                    <div className="mt-2 text-lg font-semibold tabular-nums text-white sm:text-xl">{formatKes(results.dieselMonthly)}</div>
                   </div>
                   <div className="rounded-[1.4rem] border border-white/10 bg-white/5 p-4">
                     <div className="text-sm text-white/50">Electric per month</div>
-                    <div className="mt-2 text-xl font-semibold text-white">{formatKes(results.electricMonthly)}</div>
+                    <div className="mt-2 text-lg font-semibold tabular-nums text-white sm:text-xl">{formatKes(results.electricMonthly)}</div>
                   </div>
                   <div className="rounded-[1.4rem] border border-emerald-300/20 bg-emerald-300/8 p-4">
                     <div className="text-sm text-white/55">Monthly gap</div>
-                    <div className="mt-2 text-xl font-semibold text-white">{formatKes(results.monthlySavings)}</div>
+                    <div className="mt-2 text-lg font-semibold tabular-nums text-white sm:text-xl">{formatKes(results.monthlySavings)}</div>
                   </div>
                 </div>
               </div>
@@ -168,17 +168,17 @@ export function RoiSection() {
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
                 <div className="rounded-[1.85rem] border border-emerald-300/20 bg-emerald-300/10 p-5">
                   <div className="text-sm text-white/55">Projected annual savings</div>
-                  <div className="mt-2 text-4xl font-semibold text-white">{formatKes(results.yearlySavings)}</div>
+                  <div className="mt-2 text-3xl font-semibold tabular-nums text-white sm:text-4xl">{formatKes(results.yearlySavings)}</div>
                 </div>
 
                 <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-4">
                   <div className="text-sm text-white/50">Diesel after 12 months</div>
-                  <div className="mt-2 text-2xl font-semibold text-white">{formatKes(yearOne.diesel)}</div>
+                  <div className="mt-2 text-xl font-semibold tabular-nums text-white sm:text-2xl">{formatKes(yearOne.diesel)}</div>
                 </div>
 
                 <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-4">
                   <div className="text-sm text-white/50">Electric after 12 months</div>
-                  <div className="mt-2 text-2xl font-semibold text-white">{formatKes(yearOne.electric)}</div>
+                  <div className="mt-2 text-xl font-semibold tabular-nums text-white sm:text-2xl">{formatKes(yearOne.electric)}</div>
                 </div>
               </div>
             </div>

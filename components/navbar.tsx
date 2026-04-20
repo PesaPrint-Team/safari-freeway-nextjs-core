@@ -18,12 +18,22 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--line)] bg-[#120d0a]/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <div className="flex items-center gap-4">
-          <div className="overflow-hidden">
-            <Image src="/brand/auto-freeway.png" alt={`${COMPANY.brand} logo mark`} width={160} height={136} className="h-11 w-auto" priority />
-          </div>
-          <div>
-            <div className="text-sm font-semibold tracking-[0.22em] text-[var(--sand)]">{COMPANY.brand.toUpperCase()}</div>
+        <div className="flex items-center gap-3 sm:gap-4">
+          <Image
+            src="/brand/auto-freeway.png"
+            alt={`${COMPANY.brand} logo mark`}
+            width={320}
+            height={272}
+            className="h-11 w-auto sm:h-14 lg:h-16"
+            priority
+          />
+          <div className="flex flex-col justify-center gap-1 leading-none">
+            <div className="text-[0.6rem] uppercase tracking-[0.3em] text-white/55 sm:text-[0.7rem] sm:tracking-[0.35em]">
+              {COMPANY.brand}
+            </div>
+            <div className="text-2xl font-semibold tracking-[0.2em] text-[var(--sand)] sm:text-3xl lg:text-4xl">
+              SAFARI
+            </div>
           </div>
         </div>
 
@@ -45,7 +55,10 @@ export function Navbar() {
           >
             WhatsApp
           </Button>
-          <Button onClick={() => scrollToId('book-demo')}>Book Fleet Demo</Button>
+          <Button variant="outline" onClick={() => scrollToId('test-drive')}>
+            Book Test Drive
+          </Button>
+          <Button glow onClick={() => scrollToId('book-demo')}>Book Fleet Demo</Button>
         </div>
 
         <button className="md:hidden text-white" onClick={() => setOpen((v) => !v)} aria-label="Toggle menu">
@@ -61,7 +74,8 @@ export function Navbar() {
                 {label}
               </button>
             ))}
-            <Button onClick={() => { setOpen(false); scrollToId('book-demo'); }}>Book Fleet Demo</Button>
+            <Button variant="outline" onClick={() => { setOpen(false); scrollToId('test-drive'); }}>Book Test Drive</Button>
+            <Button glow onClick={() => { setOpen(false); scrollToId('book-demo'); }}>Book Fleet Demo</Button>
           </div>
         </div>
       )}

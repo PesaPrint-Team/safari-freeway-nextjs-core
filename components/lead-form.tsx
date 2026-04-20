@@ -38,7 +38,7 @@ export function LeadForm() {
   };
 
   return (
-    <section id="book-demo" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+    <section id="book-demo" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
       <Card className="bg-gradient-to-b from-white/10 to-white/5 shadow-2xl">
         <CardContent className="grid gap-4 md:grid-cols-2">
           <div className="md:col-span-2">

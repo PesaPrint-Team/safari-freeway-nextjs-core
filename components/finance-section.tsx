@@ -24,7 +24,7 @@ export function FinanceSection() {
   }, [vehicleCost, depositPct, termMonths, annualRate]);
 
   return (
-    <section id="finance" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+    <section id="finance" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
       <div className="space-y-6">
         <SectionHeading
           eyebrow="Finance"
@@ -33,7 +33,7 @@ export function FinanceSection() {
         />
 
         <Card className="bg-gradient-to-b from-white/8 to-white/[0.03] shadow-2xl">
-          <CardContent className="space-y-6 lg:p-8">
+          <CardContent className="space-y-6 p-4 sm:p-6 lg:p-8">
             <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
               <div className="rounded-[1.2rem] border border-white/10 bg-white/[0.03] p-4">
                 <label htmlFor="finance-vehicle-cost" className="text-sm font-medium text-white/80">
@@ -108,9 +108,11 @@ export function FinanceSection() {
               </div>
             </div>
 
-            <div className="rounded-[1.8rem] border border-white/10 bg-black/20 p-5 sm:p-6">
+            <div className="rounded-[1.8rem] border border-white/10 bg-black/20 p-4 sm:p-6">
               <div className="text-xs uppercase tracking-[0.24em] text-white/40">Estimated monthly repayment</div>
-              <div className="mt-3 text-4xl font-semibold text-white sm:text-5xl">{formatKes(finance.monthlyPayment)}</div>
+              <div className="mt-3 text-3xl font-semibold tabular-nums text-white sm:text-4xl lg:text-5xl">
+                {formatKes(finance.monthlyPayment)}
+              </div>
               <div className="mt-3 text-sm text-white/55">
                 {depositPct}% deposit over {termMonths} months at {annualRate}% p.a.
               </div>
@@ -118,15 +120,15 @@ export function FinanceSection() {
               <div className="mt-6 grid gap-3 sm:grid-cols-3">
                 <div className="rounded-[1.2rem] border border-white/10 bg-white/[0.04] p-4">
                   <div className="text-sm text-white/50">Deposit</div>
-                  <div className="mt-2 text-xl font-semibold text-white">{formatKes(finance.deposit)}</div>
+                  <div className="mt-2 text-lg font-semibold tabular-nums text-white sm:text-xl">{formatKes(finance.deposit)}</div>
                 </div>
                 <div className="rounded-[1.2rem] border border-white/10 bg-white/[0.04] p-4">
                   <div className="text-sm text-white/50">Financed</div>
-                  <div className="mt-2 text-xl font-semibold text-white">{formatKes(finance.principal)}</div>
+                  <div className="mt-2 text-lg font-semibold tabular-nums text-white sm:text-xl">{formatKes(finance.principal)}</div>
                 </div>
                 <div className="rounded-[1.2rem] border border-white/10 bg-white/[0.04] p-4">
                   <div className="text-sm text-white/50">Total repayment</div>
-                  <div className="mt-2 text-xl font-semibold text-white">{formatKes(finance.totalRepayment)}</div>
+                  <div className="mt-2 text-lg font-semibold tabular-nums text-white sm:text-xl">{formatKes(finance.totalRepayment)}</div>
                 </div>
               </div>
             </div>
