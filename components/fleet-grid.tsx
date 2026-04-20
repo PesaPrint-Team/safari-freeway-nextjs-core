@@ -57,7 +57,7 @@ export function FleetGrid() {
                   </div>
                   <p className="mt-5 text-sm leading-7 text-white/60">{item.useCase}</p>
                   <Button variant="outline" className="mt-6 w-full" onClick={() => scrollToId('book-demo')}>
-                    Configure this fleet
+                    Enquire about this model
                   </Button>
                 </CardContent>
               </Card>
