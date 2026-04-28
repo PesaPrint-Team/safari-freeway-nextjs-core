@@ -35,24 +35,6 @@ export const TRUST = [
 
 export const FLEET = [
   {
-    name: 'Safari Chui High Roof',
-    type: '17-Seater Shuttle',
-    range: '300–360 km',
-    battery: '65.17 kWh LFP',
-    fastCharge: '40 kW DC',
-    useCase: 'Airport transfers, staff transport, hotel shuttles, SACCO routes',
-    image: '/fleet/chui-side.jpg'
-  },
-  {
-    name: 'Safari Chui Wide Body',
-    type: '17-Seater City Shuttle',
-    range: '250 km',
-    battery: '41.9 kWh LFP',
-    fastCharge: '40 kW DC',
-    useCase: 'CBD routes, estates, school runs, urban transport',
-    image: '/fleet/chui-front.jpg'
-  },
-  {
     name: 'Safari Duma',
     type: '14-Seater / Cargo / Reefer Van',
     range: '225–250 km',
@@ -68,7 +50,7 @@ export const FLEET = [
     battery: '81.1 kWh LFP',
     fastCharge: '80 kW DC',
     useCase: 'Bus bodies, school buses, cargo builds, fleet conversions',
-    image: '/fleet/box-truck.jpg'
+    image: '/fleet/ndovu.jpg'
   },
   {
     name: 'Safari Kiboko',
@@ -107,9 +89,9 @@ export const VISUALS = [
     image: '/fleet/box-truck.jpg'
   },
   {
-    title: 'Safari Chui',
-    subtitle: '17-seater shuttle for airport, hotel, and SACCO routes',
-    image: '/fleet/chui-side.jpg'
+    title: 'Safari Ndovu',
+    subtitle: 'Safari Ndovu is a fully electric chassis truck built to adapt.',
+    image: '/fleet/ndovu.jpg'
   }
 ] as const;
 
