@@ -41,7 +41,7 @@ export const FLEET = [
     battery: '41.9 kWh LFP',
     fastCharge: '40 kW DC',
     useCase: 'Last-mile delivery, parcel logistics, cold-chain distribution',
-    image: '/brand/cover-fleet.jpg'
+    image: '/fleet/duma.jpg'
   },
   {
     name: 'Safari Ndovu',
@@ -63,7 +63,7 @@ export const FLEET = [
   },
   {
     name: 'Safari Swara',
-    type: 'Passenger Tricycle',
+    type: 'Passenger Vehicle',
     range: '110 km',
     battery: '60–72V compatible',
     fastCharge: '6–8 hrs AC',
