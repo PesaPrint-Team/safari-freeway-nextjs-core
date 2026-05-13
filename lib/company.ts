@@ -73,9 +73,9 @@ export const FLEET = [
   {
     name: 'Safari Nyati',
     type: 'Light commercial truck',
-    range: '225–250 km',
-    battery: '41.9 kWh LFP',
-    fastCharge: '40 kW DC',
+    range: '340 km',
+    battery: '81.1 kWh LFP',
+    fastCharge: '80 kW DC',
     useCase: 'e-commerce courier fleet, chilled-goods shuttle',
     image: '/fleet/nyati.png'
   }
