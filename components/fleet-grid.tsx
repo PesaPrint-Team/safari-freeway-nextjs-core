@@ -1,11 +1,13 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
 import { Bus, Factory, Snowflake, Truck, Users } from 'lucide-react';
 import { FLEET } from '@/lib/company';
 import { Button, Card, CardContent } from '@/components/ui';
 import { SectionHeading } from '@/components/section-heading';
 import { Reveal } from '@/components/animated';
+import { ImageLightbox } from '@/components/image-lightbox';
 
 const icons = [Bus, Users, Truck, Factory, Snowflake, Users] as const;
 
@@ -14,6 +16,8 @@ function scrollToId(id: string) {
 }
 
 export function FleetGrid() {
+  const [lightbox, setLightbox] = useState<{ src: string; alt: string } | null>(null);
+
   return (
     <section id="fleet" className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
       <SectionHeading
@@ -27,10 +31,15 @@ export function FleetGrid() {
           return (
             <Reveal key={item.name} delay={(index % 3) * 0.1}>
               <Card className="h-full overflow-hidden shadow-2xl shadow-black/20 transition duration-300 hover:-translate-y-1 hover:bg-white/[0.07] hover:shadow-black/30">
-                <div className="relative h-52 overflow-hidden">
-                  <Image src={item.image} alt={item.name} fill className="object-cover transition duration-700 hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#100b09] via-[#100b09]/20 to-transparent" />
-                </div>
+                <button
+                  type="button"
+                  className="relative block h-52 w-full cursor-zoom-in overflow-hidden border-0 bg-transparent p-0 text-left outline-none transition focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[rgba(207,52,57,0.55)]"
+                  onClick={() => setLightbox({ src: item.image, alt: item.name })}
+                  aria-label={`View ${item.name} image larger`}
+                >
+                  <Image src={item.image} alt="" fill className="object-cover transition duration-700 hover:scale-105" aria-hidden />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#100b09] via-[#100b09]/20 to-transparent" />
+                </button>
                 <CardContent>
                   <div className="flex items-start justify-between gap-4">
                     <div>
@@ -65,6 +74,12 @@ export function FleetGrid() {
           );
         })}
       </div>
+      <ImageLightbox
+        open={lightbox !== null}
+        onClose={() => setLightbox(null)}
+        src={lightbox?.src ?? ''}
+        alt={lightbox?.alt ?? ''}
+      />
     </section>
   );
 }

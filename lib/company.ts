@@ -59,16 +59,25 @@ export const FLEET = [
     battery: '81.1 kWh LFP',
     fastCharge: '80 kW DC',
     useCase: 'Cold-chain, food distribution, pharma delivery',
-    image: '/fleet/box-truck.jpg'
+    image: '/fleet/kiboko.png'
   },
   {
-    name: 'Safari Swara',
-    type: 'Passenger Vehicle',
-    range: '110 km',
-    battery: '60–72V compatible',
-    fastCharge: '6–8 hrs AC',
-    useCase: 'Short-hop urban passenger transport, estate taxis, feeder routes',
-    image: '/fleet/charging-shuttle.jpg'
+    name: 'Safari Mamba',
+    type: 'Commercial workhorse',
+    range: '340 km',
+    battery: '81.1 kWh LFP',
+    fastCharge: '80 kW DC',
+    useCase: 'Courier fleet, mobile workshop, or chilled-goods shuttle',
+    image: '/fleet/mamba.png'
+  },
+  {
+    name: 'Safari Nyati',
+    type: 'Light commercial truck',
+    range: '225–250 km',
+    battery: '41.9 kWh LFP',
+    fastCharge: '40 kW DC',
+    useCase: 'e-commerce courier fleet, chilled-goods shuttle',
+    image: '/fleet/nyati.png'
   }
 ] as const;
 

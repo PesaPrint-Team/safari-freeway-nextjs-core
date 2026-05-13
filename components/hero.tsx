@@ -1,17 +1,21 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ChevronRight, ShieldCheck, Wallet } from 'lucide-react';
 import { COMPANY, STATS } from '@/lib/company';
 import { Button } from '@/components/ui';
 import { CountUp, Typewriter } from '@/components/animated';
+import { ImageLightbox } from '@/components/image-lightbox';
 
 function scrollToId(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 export function Hero() {
+  const [fleetCoverOpen, setFleetCoverOpen] = useState(false);
+
   return (
     <section className="relative overflow-hidden">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(207,52,57,0.22),transparent_24%),radial-gradient(circle_at_85%_20%,rgba(241,223,207,0.16),transparent_24%)]" />
@@ -62,14 +66,19 @@ export function Hero() {
           <div className="relative overflow-hidden rounded-[2.4rem] border border-[var(--line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] p-4 shadow-[0_30px_120px_rgba(0,0,0,0.45)]">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(207,52,57,0.18),transparent_36%)]" />
             <div className="relative">
-              <div className="relative h-[260px] overflow-hidden rounded-[2rem] sm:h-[340px]">
-                <Image src="/brand/cover-fleet.jpg" alt={`${COMPANY.vehicleBrand} fleet cover`} fill className="object-cover" priority />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0d0908] via-[#0d0908]/15 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
+              <button
+                type="button"
+                className="relative block h-[260px] w-full cursor-zoom-in overflow-hidden rounded-[2rem] border-0 bg-transparent p-0 text-left outline-none transition sm:h-[340px] focus-visible:ring-2 focus-visible:ring-[rgba(207,52,57,0.55)] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0d0908]"
+                onClick={() => setFleetCoverOpen(true)}
+                aria-label={`View ${COMPANY.vehicleBrand} fleet cover image larger`}
+              >
+                <Image src="/brand/cover-fleet.jpg" alt="" fill className="object-cover" priority aria-hidden />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0d0908] via-[#0d0908]/15 to-transparent" />
+                <div className="pointer-events-none absolute bottom-0 left-0 right-0 p-4 sm:p-6">
                   <div className="text-[0.65rem] uppercase tracking-[0.28em] text-[var(--sand)] sm:text-xs sm:tracking-[0.32em]">Electric fleet lineup</div>
                   <div className="mt-2 max-w-md text-xl font-semibold text-white sm:text-3xl">Passenger and cargo vehicles for transport operators.</div>
                 </div>
-              </div>
+              </button>
             </div>
             <div className="relative mt-4 grid gap-4 sm:grid-cols-2">
               <div className="rounded-3xl border border-[var(--line)] bg-black/20 p-5">
@@ -102,6 +111,12 @@ export function Hero() {
           </div>
         </motion.div>
       </div>
+      <ImageLightbox
+        open={fleetCoverOpen}
+        onClose={() => setFleetCoverOpen(false)}
+        src="/brand/cover-fleet.jpg"
+        alt={`${COMPANY.vehicleBrand} fleet cover`}
+      />
     </section>
   );
 }
