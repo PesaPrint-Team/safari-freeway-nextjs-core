@@ -37,7 +37,7 @@ export const FLEET = [
   {
     name: 'Safari Duma',
     type: '14-Seater / Cargo / Reefer Van',
-    range: '225–250 km',
+    range: '250 km',
     battery: '41.9 kWh LFP',
     fastCharge: '40 kW DC',
     useCase: 'Last-mile delivery, parcel logistics, cold-chain distribution',
